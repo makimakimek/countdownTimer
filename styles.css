@@ -1,0 +1,70 @@
+#page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 40px;
+}
+
+#pageTitle {
+    font-size: 50px;
+}
+
+#timerInput {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+#timerInput > div > input {
+    width: 65px;
+    height: 40px;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    margin-top: 3px;
+}
+
+#timerInput > div {
+    display: flex;
+    gap: 2px;
+    font-size: 40px;
+}
+
+#startButton, #addTimerButton {
+    font-size: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: purple;
+    color: white;
+}
+
+#startButton {
+    width: 80px;
+}
+
+#addTimerButton {
+    width: 140px;
+    height: 45px;
+}
+
+#pauseButton, #resetButton {
+    display: none;
+    font-size: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: purple;
+    color: white;
+    width: 80px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}

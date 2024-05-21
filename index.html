@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+
+<body>
+    <div id = "page">
+        <div id = "pageTitle">
+            Countdown Timer
+        </div>
+
+        <div id = "timerInput">
+            <div id = "hour">
+                <input type = "number" id = "hourAmount" placeholder = "HH" maxlength = "2" min = "0" max = "99">
+                <div>:</div>
+            </div>
+    
+            <div id = "minute">
+                <input type = "number" id = "minuteAmount" placeholder = "MM" maxlength = "2" max = "60" min = "0">
+                <div>:</div>
+            </div>
+    
+            <div id = "second">
+                <input type = "number" id = "secondAmount" placeholder = "SS" maxlength = "2" max = "60" min = "0">
+            </div>
+
+            <button id = "startButton">Start</button>
+
+            <button id = "pauseButton">Pause</button>
+
+            <button id = "resetButton">Reset</button>
+        </div>
+
+        <!--<button id = "addTimerButton">Add Timer</button>-->
+
+    </div>
+</body>
+
+<script src = "javascript.js"></script>
+
+</html>
