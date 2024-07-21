@@ -9,34 +9,45 @@
 
 <body>
     <div id = "page">
-        <div id = "pageTitle">
-            Countdown Timer
-        </div>
 
-        <div id = "timerInput">
-            <div id = "hour">
-                <input type = "number" id = "hourAmount" placeholder = "HH" maxlength = "2" min = "0" max = "99">
-                <div>:</div>
+        <div id = "countDownTimerAndTitle">
+            <div id = "pageTitle">
+                <div id = "title">
+                    countdown
+                </div>
+                <div id = "title">
+                    timer
+                </div>
             </div>
     
-            <div id = "minute">
-                <input type = "number" id = "minuteAmount" placeholder = "MM" maxlength = "2" max = "60" min = "0">
+            <div id = "timerInput">
+                <div id = "hour">
+                    <input type = "number" id = "hourAmount" placeholder = "HH" maxlength = "2" min = "0" max = "99">
+                    
+                </div>
+
                 <div>:</div>
-            </div>
+        
+                <div id = "minute">
+                    <input type = "number" id = "minuteAmount" placeholder = "MM" maxlength = "2" max = "60" min = "0">
+                    
+                </div>
+
+                <div>:</div>
+        
+                <div id = "second">
+                    <input type = "number" id = "secondAmount" placeholder = "SS" maxlength = "2" max = "60" min = "0">
+                </div>
+
+                <div id = "allButtons">
+                    <button id = "startButton">start</button>
     
-            <div id = "second">
-                <input type = "number" id = "secondAmount" placeholder = "SS" maxlength = "2" max = "60" min = "0">
+                    <button id = "pauseButton">pause</button>
+    
+                    <button id = "resetButton">reset</button>
+                </div>
             </div>
-
-            <button id = "startButton">Start</button>
-
-            <button id = "pauseButton">Pause</button>
-
-            <button id = "resetButton">Reset</button>
         </div>
-
-        <!--<button id = "addTimerButton">Add Timer</button>-->
-
     </div>
 </body>
 
