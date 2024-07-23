@@ -124,4 +124,80 @@ function timer() {
     });
 }
 
+function themes() {
+    const antelopeCanyonButton = document.querySelector('#antelopeCanyonButton');
+    const centralParkButton = document.querySelector('#centralParkButton');
+    const empireBuildingButton = document.querySelector('#empireBuildingButton');
+    const goldenGateButton = document.querySelector('#goldenGateButton');
+    const grandCanyonButton = document.querySelector('#grandCanyonButton');
+    const sunsetButton = document.querySelector('#sunsetButton');
+    const page = document.querySelector('#page');
+    const hourAmount = document.querySelector('#hourAmount');
+    const theDotsBetween = document.querySelector('#timerInput');
+    const minuteAmount = document.querySelector('#minuteAmount');
+    const secondAmount = document.querySelector('#secondAmount');
+    const pageTitle = document.querySelector('#pageTitle');
+
+    centralParkButton.addEventListener("click", (event) => {
+        page.style.backgroundImage = "url('./assets/centralPark.jpg')";
+        countDownTimerAndTitle.style.marginTop = "15vh";
+        hourAmount.style.color = "black";
+        minuteAmount.style.color = "black";
+        secondAmount.style.color = "black";
+        theDotsBetween.style.color = "black";
+        pageTitle.style.color = "black";
+    });
+
+    antelopeCanyonButton.addEventListener("click", (event) => {
+        page.style.backgroundImage = "url('./assets/antelopeCanyon.jpg')";
+        countDownTimerAndTitle.style.marginTop = "30vh";
+        hourAmount.style.color = "black";
+        minuteAmount.style.color = "black";
+        secondAmount.style.color = "black";
+        theDotsBetween.style.color = "black";
+        pageTitle.style.color = "black";
+    });
+
+    empireBuildingButton.addEventListener("click", (event) => {
+        page.style.backgroundImage = "url('./assets/empireBuilding.jpg')";
+        countDownTimerAndTitle.style.marginTop = "0vh";
+        hourAmount.style.color = "white";
+        minuteAmount.style.color = "white";
+        secondAmount.style.color = "white";
+        theDotsBetween.style.color = "white";
+        pageTitle.style.color = "white";
+    });
+
+    goldenGateButton.addEventListener("click", (event) => {
+        page.style.backgroundImage = "url('./assets/goldenGate.jpg')";
+        countDownTimerAndTitle.style.marginTop = "8vh";
+        hourAmount.style.color = "black";
+        minuteAmount.style.color = "black";
+        secondAmount.style.color = "black";
+        theDotsBetween.style.color = "black";
+        pageTitle.style.color = "black";
+    });
+
+    grandCanyonButton.addEventListener("click", (event) => {
+        page.style.backgroundImage = "url('./assets/grandCanyon.jpg')";
+        countDownTimerAndTitle.style.marginTop = "2vh";
+        hourAmount.style.color = "black";
+        minuteAmount.style.color = "black";
+        secondAmount.style.color = "black";
+        theDotsBetween.style.color = "black";
+        pageTitle.style.color = "black";
+    });
+
+    sunsetButton.addEventListener("click", (event) => {
+        page.style.backgroundImage = "url('./assets/sunset.jpg')";
+        countDownTimerAndTitle.style.marginTop = "20vh";
+        hourAmount.style.color = "black";
+        minuteAmount.style.color = "black";
+        secondAmount.style.color = "black";
+        theDotsBetween.style.color = "black";
+        pageTitle.style.color = "black";
+    });
+}
+
 timer();
+themes();
