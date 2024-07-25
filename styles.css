@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     height: 100vh;
-    background-image: url("./assets/centralPark.jpg");
+    background-image: url("./assets/antelopeCanyon.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -16,7 +16,7 @@
 #countDownTimerAndTitle {
     display: flex;
     flex-direction: column;
-    margin-top: 15vh;
+    margin-top: 30vh;
     gap: 10px;
     width: 96%;
 }
