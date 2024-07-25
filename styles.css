@@ -16,8 +16,9 @@
 #countDownTimerAndTitle {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 30vh;
-    gap: 10px;
+    gap: 1.3vh;
     width: 96%;
 }
 
@@ -25,7 +26,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 50px;
+    font-size: 6vh;
     font-family: "Fredoka", sans-serif;
     font-weight: 700;
 }
@@ -33,44 +34,45 @@
 #timerInput {
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 1vw;
 }
 
 #hourAmount, #secondAmount, #minuteAmount {
-    height: 40px;
-    font-size: 40px;
+    height: 4vh;
+    font-size: 4.8vh;
     border: none;
-    margin-top: 3px;
+    margin-top: 0.8vh;
     background-color: transparent;
     font-family: "Fredoka", sans-serif;
     text-align: center;
 }
 
 #hourAmount {
-    width: 55px;
+    width: 60px;
 }
 
 #minuteAmount {
-    width: 65px;
+    width: 80px;
 }
 
 #secondAmount {
-    width: 48px;
+    width: 55px;
 }
 
 #timerInput > div {
     display: flex;
-    font-size: 40px;
+    font-size: 4.4vh;
 }
 
 #allButtons {
     display: flex;
+    align-items: center;
 }
 
 #startButton {
-    font-size: 20px;
+    font-size: 2.4vh;
     border-radius: 20px;
-    margin-left: 10px;
+    margin-left: 15px;
     border: none;
     background-color: purple;
     color: white;
@@ -79,18 +81,20 @@
 }
 
 #startButton {
-    width: 80px;
+    width: 90px;
+    height: 45px;
 }
 
 #pauseButton, #resetButton {
     display: none;
-    font-size: 20px;
-    margin-left: 20px;
-    border-radius: 20px;
+    font-size: 2.4vh;
+    margin-left: 2vw;
+    border-radius: 40px;
     border: none;
     background-color: purple;
     color: white;
-    width: 80px;
+    width: 90px;
+    height: 45px;
     font-family: "Fredoka", sans-serif;
 }
 
@@ -114,6 +118,26 @@
     height: 60px;
     background-color: transparent;
     border: none;
+}
+
+#timerIsCompleteBox {
+    font-family: "Fredoka", sans-serif;
+    font-size: 4vh;
+    display: none;
+    gap: 1vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#okayButton {
+    font-size: 2.4vh;
+    border-radius: 40px;
+    border: none;
+    background-color: purple;
+    color: white;
+    width: 80px;
+    height: 45px;
+    font-family: "Fredoka", sans-serif;
 }
 
 input[type=number]::-webkit-inner-spin-button, 

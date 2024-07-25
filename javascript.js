@@ -8,6 +8,8 @@ function timer() {
         const seconds = document.querySelector('#secondAmount');
         const minutes = document.querySelector('#minuteAmount');
         const hours = document.querySelector('#hourAmount');
+        const whenTimerIsComplete = document.querySelector('#timerIsCompleteBox');
+        const okayButton = document.querySelector('#okayButton');
 
         let second = seconds.value;
         let minute = minutes.value;
@@ -71,9 +73,21 @@ function timer() {
     
                     document.title = `${hours.value}:${minutes.value}:${seconds.value}`;
                 } else {
-                    alert("Timer Complete");
-                    resetButton.click();
-                    clearInterval(intervalId);
+                    whenTimerIsComplete.style.display = "flex";
+                    whenTimerIsComplete.style.flexDirection = "column";
+
+                    okayButton.addEventListener("click", (event) => {
+                        resetButton.click();
+                        clearInterval(intervalId);
+                        whenTimerIsComplete.style.display = "none";
+                    });
+
+                    resetButton.addEventListener("click", (event) => {
+                        resetButton.click();
+                        clearInterval(intervalId);
+                        whenTimerIsComplete.style.display = "none";
+                    });
+
                     return;
                 }
             }
