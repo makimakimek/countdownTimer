@@ -2,7 +2,6 @@ function timer() {
     const startButton = document.querySelector('#startButton');
     const pauseButton = document.querySelector('#pauseButton');
     const resetButton = document.querySelector('#resetButton');
-    const addTimerButton = document.querySelector('#addTimerButton');
     const inputs = document.querySelectorAll('input[type="number"]');
 
     startButton.addEventListener("click", (event) => {
@@ -102,11 +101,7 @@ function timer() {
             hours.removeAttribute('readOnly');
 
             document.title = "Countdown Timer";
-        });       
-        
-        //addTimerButton.addEventListener("click", (event) => {
-
-        //});
+        });
     });
 
     //auto tabbing to the next input
@@ -124,6 +119,7 @@ function timer() {
     });
 }
 
+//function for the theme buttons to change in between themes
 function themes() {
     const antelopeCanyonButton = document.querySelector('#antelopeCanyonButton');
     const centralParkButton = document.querySelector('#centralParkButton');
