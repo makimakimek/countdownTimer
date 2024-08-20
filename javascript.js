@@ -46,6 +46,10 @@ function timer() {
                 pauseButton.style.display = "block";
                 resetButton.style.display = "block";
 
+                seconds.style.width = "50px";
+                minutes.style.width = "50px";
+                hours.style.width = "50px";
+
                 if(second != 0 || minute != 0 || hour != 0) {
                     if(second == 0) {
                         second = 59;
@@ -144,12 +148,12 @@ function themes() {
 
     centralParkButton.addEventListener("click", (event) => {
         page.style.backgroundImage = "url('./assets/centralPark.jpg')";
-        countDownTimerAndTitle.style.marginTop = "15vh";
+        countDownTimerAndTitle.style.marginTop = "12vh";
     });
 
     antelopeCanyonButton.addEventListener("click", (event) => {
         page.style.backgroundImage = "url('./assets/antelopeCanyon.jpg')";
-        countDownTimerAndTitle.style.marginTop = "30vh";
+        countDownTimerAndTitle.style.marginTop = "28vh";
     });
 
     goldenGateButton.addEventListener("click", (event) => {
@@ -159,7 +163,7 @@ function themes() {
 
     grandCanyonButton.addEventListener("click", (event) => {
         page.style.backgroundImage = "url('./assets/grandCanyon.jpg')";
-        countDownTimerAndTitle.style.marginTop = "2vh";
+        countDownTimerAndTitle.style.marginTop = "1vh";
     });
 
     sunsetButton.addEventListener("click", (event) => {

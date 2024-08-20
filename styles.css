@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30vh;
+    margin-top: 28vh;
     gap: 1.3vh;
     width: 96%;
 }
@@ -34,7 +34,7 @@
 #timerInput {
     display: flex;
     justify-content: center;
-    gap: 1vw;
+    gap: 0.5vw;
 }
 
 #hourAmount, #secondAmount, #minuteAmount {
@@ -48,15 +48,15 @@
 }
 
 #hourAmount {
-    width: 60px;
+    width: 50px;
 }
 
 #minuteAmount {
-    width: 80px;
+    width: 70px;
 }
 
 #secondAmount {
-    width: 55px;
+    width: 45px;
 }
 
 #timerInput > div {
